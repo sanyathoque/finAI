@@ -1,124 +1,131 @@
-Real-Time News Analysis for Investment Decisions
-A project that aggregates, scrapes, and analyzes real-time news articles to provide insights for investment decisions, using SerpAPI, Cheerio, and DeepSeek API.
+# **Real-Time News Analysis for Investment Decisions**
 
-Table of Contents
-Overview
+A project that aggregates, scrapes, and analyzes real-time news articles to provide insights for investment decisions, using **SerpAPI**, **Cheerio**, and **DeepSeek API**.
 
-Features
+---
 
-Installation
+## **Table of Contents**
+- [**Overview**](#overview)
+- [**Features**](#features)
+- [**Installation**](#installation)
+- [**Usage**](#usage)
+- [**Technical Stack**](#technical-stack)
+- [**Demo**](#demo)
+- [**Contributing**](#contributing)
+- [**License**](#license)
+- [**Acknowledgments**](#acknowledgments)
+- [**Contact**](#contact)
 
-Usage
+---
 
-Technical Stack
+## **Overview**
 
-Demo
+This project aims to provide **real-time insights** into stock market investments by analyzing the latest news articles. By leveraging **SerpAPI** for news aggregation, **Cheerio** for web scraping, and **DeepSeek's Large Language Model (LLM)** for analysis, the project offers a comprehensive solution for investors looking to make **informed decisions** based on current events.
 
-Contributing
+### **Key Use Case**
+> Analyzing the impact of the **Tesla Cybertruck explosion** on Tesla's stock within an hour of the event.
 
-License
+---
 
-Acknowledgments
+## **Features**
 
-Contact
+- **Real-Time News Fetching**: Utilizes **SerpAPI** to gather the latest news articles.
+- **Comprehensive Web Scraping**: Uses **Cheerio** to extract full content from news articles.
+- **AI-Powered Analysis**: Employs **DeepSeek LLM** to analyze news content and provide insights.
+- **Customizable Search Parameters**: Adjust search queries, time periods, and locations.
+- **Investment Insights**: Generates **actionable recommendations** based on news analysis.
 
-Overview
-This project aims to provide real-time insights into stock market investments by analyzing the latest news articles. By leveraging SerpAPI for news aggregation, Cheerio for web scraping, and DeepSeek's Large Language Model (LLM) for analysis, the project offers a comprehensive solution for investors looking to make informed decisions based on current events.
+---
 
-Key Use Case
-Analyzing the impact of the Tesla Cybertruck explosion on Tesla's stock within an hour of the event.
+## **Installation**
 
-Features
-Real-Time News Fetching: Utilizes SerpAPI to gather the latest news articles.
+### **Prerequisites**
+- **Node.js** and **npm** installed on your machine.
 
-Comprehensive Web Scraping: Uses Cheerio to extract full content from news articles.
+### **Steps**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/real-time-news-analysis.git
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Set up environment variables:**
+   - Obtain API keys for **SerpAPI** and **DeepSeek**.
+   - Create a `.env` file in the root directory with the following content:
+     ```env
+     SERPAPI_KEY=your_serpapi_key
+     DEEPSEEK_API_KEY=your_deepseek_api_key
+     ```
 
-AI-Powered Analysis: Employs DeepSeek LLM to analyze news content and provide insights.
+---
 
-Customizable Search Parameters: Adjust search queries, time periods, and locations.
+## **Usage**
 
-Investment Insights: Generates actionable recommendations based on news analysis.
+1. **Run the script:**
+   ```bash
+   node fetchNewsResults.js
+   ```
+2. The script will fetch the latest news, scrape the content, and analyze it using **DeepSeek LLM**.
+3. **View the output** in the console for insights and recommendations.
 
-Installation
-Prerequisites
-Node.js and npm installed on your machine.
+---
 
-Steps
-Clone the repository:
+## **Technical Stack**
 
-bash
-Copy
-git clone https://github.com/yourusername/real-time-news-analysis.git
-Install dependencies:
+- **SerpAPI**: For fetching the latest news articles.
+- **Cheerio**: For web scraping news content.
+- **DeepSeek API**: For AI-powered analysis of news data.
+- **Axios**: For making HTTP requests.
+- **Node.js**: Runtime environment for the script.
 
-bash
-Copy
-npm install
-Set up environment variables:
+---
 
-Obtain API keys for SerpAPI and DeepSeek.
+## **Demo**
 
-Create a .env file in the root directory with the following content:
-
-Copy
-SERPAPI_KEY=your_serpapi_key
-DEEPSEEK_API_KEY=your_deepseek_api_key
-Usage
-Run the script:
-
-bash
-Copy
-node fetchNewsResults.js
-The script will fetch the latest news, scrape the content, and analyze it using DeepSeek LLM.
-
-View the output in the console for insights and recommendations.
-
-Technical Stack
-SerpAPI: For fetching the latest news articles.
-
-Cheerio: For web scraping news content.
-
-DeepSeek API: For AI-powered analysis of news data.
-
-Axios: For making HTTP requests.
-
-Node.js: Runtime environment for the script.
-
-Demo
 Watch the project in action on YouTube:
 
-Watch on YouTube
+[**Watch on YouTube**](#)
 
-Contributing
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+---
 
-Fork the repository.
+## **Contributing**
 
-Create a new branch:
+**Contributions are welcome!** To contribute:
 
-bash
-Copy
-git checkout -b feature/YourFeature
-Make your changes and commit them:
+1. **Fork the repository.**
+2. **Create a new branch:**
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make your changes and commit them:**
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. **Open a pull request.**
 
-bash
-Copy
-git commit -m "Add your feature"
-Push to the branch:
+---
 
-bash
-Copy
-git push origin feature/YourFeature
-Open a pull request.
+## **License**
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-Acknowledgments
-SerpAPI: For providing access to Google search results.
+---
 
-DeepSeek: For the powerful LLM API.
+## **Acknowledgments**
 
-Cheerio: For efficient web scraping.
+- **SerpAPI**: For providing access to Google search results.
+- **DeepSeek**: For the powerful LLM API.
+- **Cheerio**: For efficient web scraping.
+- **Axios**: For seamless HTTP requests.
 
-Axios: For seamless HTTP requests.
+---
+
+## **Contact**
+
+For any inquiries or questions, feel free to reach out!
